@@ -17,7 +17,7 @@ import com.spring.board.service.BoardService;
 @Controller
 @RequestMapping(value = "/board")
 public class BoardController {
- 
+    //asdasd
     @Autowired
     private BoardService boardService;
  
