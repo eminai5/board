@@ -13,11 +13,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.spring.board.dto.BoardDto;
 import com.spring.board.form.BoardForm;
 import com.spring.board.service.BoardService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
  
 @Controller
 @RequestMapping(value = "/board")
 public class BoardController {
-    //asdasd
+	
+	protected final Logger logger = LoggerFactory.getLogger(this.getClass());
+    
     @Autowired
     private BoardService boardService;
  
@@ -32,6 +36,8 @@ public class BoardController {
     public List<BoardDto> getBoardList(HttpServletRequest request, HttpServletResponse response, BoardForm boardForm) throws Exception {
  
         List<BoardDto> boardList = boardService.getBoardList(boardForm);
+        
+        logger.info("이거는 타냐");
  
         return boardList;
     }
