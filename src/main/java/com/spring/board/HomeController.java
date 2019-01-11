@@ -1,4 +1,4 @@
-package com.spring.board;
+package com.spring.board;   
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * Handles requests for the application home page.
+ * Handles requests for the application home page.SDASD
  */
 @Controller
 public class HomeController {
