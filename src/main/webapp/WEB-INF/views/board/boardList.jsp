@@ -19,6 +19,7 @@
             url:"/board/getBoardList",
             dataType:"JSON",
             success : function(obj) {
+            	//alert(obj);
                 getBoardListCallback(obj);                
             },           
             error : function(xhr, status, error) {
